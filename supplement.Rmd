@@ -26,16 +26,16 @@ library(DT) # more fancy html tables
 # load data
 
 ## Botlikh text sample and narrative strategies
-bot <- read_tsv("botlikhstrategies.csv")
+bot <- read_tsv("data/botlikhstrategies.csv")
 
 ## Avar narrative strategies
-av <- read_tsv("avarstrategies.csv")
+av <- read_tsv("data/avarstrategies.csv")
 
 ## Text sample folklore anthology with languages and locations
-all <- readxl::read_xlsx("svod_content.xlsx")
+all <- readxl::read_xlsx("data/svod_content.xlsx")
 
 ## Coordinates of Botlikh villages and their neighbors with languages
-coord <- read_tsv("botlikhhood.csv")
+coord <- read_tsv("data/botlikhhood.csv")
 
 ```
 
@@ -45,7 +45,7 @@ This is a supplement to my paper "The role of multilingualism in Botlikh narrati
 
 This supplement contains:
 
-* An overview of the text sample with a short synopsis of each text
+* An overview of the text sample with a synopsis of each text
 * A list of the sampled texts, coded for several parameters related to narrative strategy
 * An overview of the contents of an anthology of Dagestanian folklore in terms of language and village representation
 * A list of Avar texts from the anthology, coded for several parameters related to narrative strategy
@@ -71,7 +71,7 @@ One day the stupid brother goes out for firewood. He finds a needle, puts it wit
 
 The next day the smart brother goes out to hunt. A bear comes by the house and tricks the stupid brother into letting him eat the honey. After he eats all the honey, he defecates in the jugs. The smart brother finds out about this and gets angry again. He decides to stay home the next day and hide behind the door with a hammer to kill the bear when it returns. He kills the bear. The next day, he goes out to hunt again while the stupid brother prepares the bear meat. He accidentally sets fire to their house and it burns down. They leave the village, and end up spending the night in a tree.
 
-The next morning, a market is set up under the tree. When the boards on which they were sleeping fall down from the tree, the merchants run away and the brothers take all of their things: the smart brother takes the money, and the stupid one takes their *burki*. The next night they sleep in the mountains. It is very cold there, so the smart brother asks the stupid one for a few coats to keep him warm, but the stupid brother refuses. The next day, the smart brother has frozen to death. The stupid brother cannot get him to wake up, and does not understand that he is dead. He goes to a nearby village for help. The villagers bury the dead brother, and the stupid brother takes his money, builds a house in the village and setlles down there.
+The next morning, a market is set up under the tree. When the boards on which they were sleeping fall down from the tree, the merchants run away and the brothers take all of their things: the smart brother takes the money, and the stupid one takes their *burki* (SV: a typical Caucasian coat made of felt or curly lamb fur). The next night they sleep in the mountains. It is very cold there, so the smart brother asks the stupid one for a few coats to keep him warm, but the stupid brother refuses. The next day, the smart brother has frozen to death. The stupid brother cannot get him to wake up, and does not understand that he is dead. He goes to a nearby village for help. The villagers bury the dead brother, and the stupid brother takes his money, builds a house in the village and settles down there.
 
 ### GUDAVA1962-6A: The man and the snake (p. 179)
 Fable about a man who saves a snake from a fire. After the man saves the snake, the snake wants to bite him. The man thinks this is wrong, but the snake does not. They agree to ask the first three creatures they run into, to judge whether the snake should bite him or not.
@@ -85,12 +85,12 @@ An anecdote about Mollah Nasreddin who goes out with his donkey to sell pottery.
 ### GUDAVA1962-7 Our village (pp. 181-183)
 Local legend about how some hundred years ago the Andic villages were constantly trying to conquer each other and take each other's land. Botlikh was small and did not have a lot of weapons, and they had to fend off attackers coming from higher up in the mountains. A person from Tasuta who lived in Botlikh and held guard at Xandu told them about everything that happened on the side of Andi. 
 
-There were rumors that a coalition of Andi and Karata would try to take Botlikh, attacking from two sides, so the people of Botlikh came up with a way to trick the attackers. They left their war materials in plain sight near the *godekan*. The guard from Tasuta intercepted a messenger with a letter from Andi to Karata, saying they will attack Botlikh the next day. He took the messenger to Botlikh and showed him the godekan full of war materials and other goods. The people of Botlikh then went to a different place using another road (perhaps through a tunnel), so that by the time the Andi spy reached the same place, they were already there playing music and having fun. The spy went back to Andi thinking that there were many people in Botlikh, and that they had a lot of power.
+There were rumors that a coalition of Andi and Karata would try to take Botlikh, attacking from two sides, so the people of Botlikh came up with a way to trick the attackers. They left their war materials in plain sight near the *godekan* (SV: a meeting place in the center of the village). The guard from Tasuta intercepted a messenger with a letter from Andi to Karata, saying they will attack Botlikh the next day. He took the messenger to Botlikh and showed him the godekan full of war materials and other goods. The people of Botlikh then went to a different place using another road (perhaps through a tunnel), so that by the time the Andi spy reached the same place, they were already there playing music and having fun. The spy went back to Andi thinking that there were many people in Botlikh, and that they had a lot of power.
 
 The next day, Andi attacked Botlikh. The people of Botlikh fought with bows and arrows, rocks and sabres. The Andi thought that the people of Karata would help them, but they never came, because the letter did not reach them. The Andi people were defeated and fled into the mosque of Chanko, leaving behind their gear, shoes, and weapons.
 
 ### GUDAVA1962-9: What happened with Aznaj-Bahadur (pp. 185-188)
-Fairy tale about a boy named Raquqiš, who never did anything but churn butter. One day, a lot of flies gather around the butter. He hit at them and killed 60 flies at once. He ran off to his peers to brag. They gifted him a *burka*, a sabre, and a saddled horse. On the sabre they made an inscription: "This Aznaj-Bahadur can kill sixty men with one blow." Then they put him on a horse and sent him away. Raquqiš goes far away, leaving one mountain behind and then the next, until he reaches a meadow where he falls asleep. Three Narts find him and take him home with them. They are slightly afraid of him because they read the inscription on his sabre. Raquqiš marries their sister, who happens to be very beautiful, and becomes their brother. One day, the Narts receive a letter from the king asking them for help fighting another king. Raquqiš as their brother also has to go.
+Fairy tale about a boy named Raquqiš, who never did anything but churn butter. One day, a lot of flies gather around the butter. He hit at them and killed 60 flies at once. He ran off to his peers to brag. They gifted him a burka, a saber, and a saddled horse. On the sabre they made an inscription: "This Aznaj-Bahadur can kill sixty men with one blow." Then they put him on a horse and sent him away. Raquqiš goes far away, leaving one mountain behind and then the next, until he reaches a meadow where he falls asleep. Three Narts find him and take him home with them. They are slightly afraid of him because they read the inscription on his sabre. Raquqiš marries their sister, who happens to be very beautiful, and becomes their brother. One day, the Narts receive a letter from the king asking them for help fighting another king. Raquqiš as their brother also has to go.
 
 *Further translation missing*
 
@@ -151,13 +151,21 @@ Recorded from M. Magomedov by M.R. Xalidova in Botlikh, in 1974.
 
 Fairy tale about a child who remains unnamed and lives with his father and stepmother. They make him guard the chickens, dry the wheat in the sun, and churn butter. One day an eagle steals the chickens and the orphan breaks the butter churn, after which his stepmother beats him up and sends him away.
 
-The next day a *kunak* from Muni visits them with a donkey packed with fruit. He asks where the child is, and shames the father and stepmother for sending the child away. They take the child back in and make him look after the kunak's donkey and a sick bull of their own. When the bull becomes sicker, the child decides to cut its throat. He accidentally cuts the throat of the donkey and flees the house fearing that he will be killed. He flees to Muni where he is welcomed by a female kunak, who feeds him whey and corn khinkal and puts him to sleep outside in the yard. Outside the child finds eggs and puts them in his hat. Then he goes back into the house after the lady of the house has left to meet with her lover. He finds a jar of *urbech* and sticks his hand in it. Then the lady of the house returns with her lover. They find out what the child has been up to when he is forced to shake hands with the woman's lover and his hand turns out to be covered in urbech. The lady of the house hits the child on the head, breaking the eggs under his hat. The lady and her lover fear that she broke his skull and they flee the scene. The child then fills a bag with nuts and flees to the nearby village Zilo.
+The next day a *kunak* (SV: a family friend from outside the village community) from Muni visits them with a donkey packed with fruit. He asks where the child is, and shames the father and stepmother for sending the child away. They take the child back in and make him look after the kunak's donkey and a sick bull of their own. When the bull becomes sicker, the child decides to cut its throat. He accidentally cuts the throat of the donkey and flees the house fearing that he will be killed. He flees to Muni where he is welcomed by a female kunak, who feeds him whey and corn khinkal and puts him to sleep outside in the yard. Outside the child finds eggs and puts them in his hat. Then he goes back into the house after the lady of the house has left to meet with her lover. He finds a jar of *urbech* (SV: a paste made of ground nuts, seeds or apricot pits) and sticks his hand in it. Then the lady of the house returns with her lover. They find out what the child has been up to when he is forced to shake hands with the woman's lover and his hand turns out to be covered in urbech. The lady of the house hits the child on the head, breaking the eggs under his hat. The lady and her lover fear that she broke his skull and they flee the scene. The child then fills a bag with nuts and flees to the nearby village Zilo.
 
-Outside Zilo he goes to sleep in a haystack. The next day the owner of the haystack comes by. When he sees a pair of feet sticking out of the haystack, he thinks the orphan is dead. He goes back to Zilo to get help. In the meantime, the orphan wakes up and makes his way to Zilo. When he arrives, the owner of the haystack is so happy that he is still alive, that he gives him a lot of *sadaqah*. The orphan returns home with this sadaqah, to which his stepmother responds that his return is for the better
+Outside Zilo he goes to sleep in a haystack. The next day the owner of the haystack comes by. When he sees a pair of feet sticking out of the haystack, he thinks the orphan is dead. He goes back to Zilo to get help. In the meantime, the orphan wakes up and makes his way to Zilo. When he arrives, the owner of the haystack is so happy that he is still alive, that he gives him a lot of *sadaqah* (SV: giving alms in Islamic culture). The orphan returns home with this sadaqah, to which his stepmother responds that his return is for the better
 
 According to the editors of the volume, this story is similar to a Dargwa fairy tale, including some shared motives like the breaking of the eggs under his hat (see page 848).
 
 ## SVOD4 -- Mythological prose
+
+### SVOD4-62: The Samudils
+Recorded from M. Azaev (born in 1935) by M.R. Xalidova in Botlikh, in 1977.
+
+Story about the Samudils, who were Pagans and lived on the mountain Tando. Avars (SV: here Avars is meant in a broad sense, including all people that were classified as ethnic Avars at some point) supposedly worshiped the Samudils in the past. Followers of Islam demanded that the Samudils accept Islam, but they refused. The most fierce opponent was the Samudils' mother Adi. To punish them, Allah sent a tornado, which broke off rock formations. The Samudils survived this by hiding in a cave. They still refused to accept Islam, so the followers of Islam asked Allah to punish them. He punished them by blowing at the mountain Tando so hard that it froze, and the Samudils froze with it. Since then Tando is covered in snow, and the water that flows from Tando is said to have healing powers.
+
+According to the editors of the volume, stories about Samudils combine Dagestanian pagan mythology with Islamic lore. Supposedly the Samudils were ancient Pagan Gods (the mother Adi being the local equivalent of the Nart matriarch), who were reconceptualized based on the Thamud from the Quran -- an Arabic Pagan tribe who were destroyed by God for rejecting the message of the prophet Salih.
+
 ### SVOD4-64: The downfall of ˁUž
 Recorded from D. Magomedov by M.R. Xalidova in Miarso, in 1974.
 
@@ -166,7 +174,7 @@ Story about ˁUž, a son of the prophet Nuh who refused to bow down to Allah. Al
 ### SVOD4-136: About a meeting with the Mother of illnesses
 Recorded with D. Tagirov by M.R. Xalidova in Miarso, year unknown.
 
-The sheperd Surxaj from Šodroda (a nearby Avar village) goes to fetch water late in the evening after he has driven the cattle into the stable. He encounters a huge being dressed in rags and tries to chase it away by sending ferocious dogs and throwing rocks. Next, he loses consciousness for several days. When he wakes up he cannot move. The elders of the village decide that he must have met the mother of illnesses, who made him sick because he threw rocks at her.
+Story about the sheperd Surxaj from Šodroda (a nearby Avar village), who goes to fetch water late in the evening after he has driven the cattle into the stable. He encounters a huge being dressed in rags and tries to chase it away by sending ferocious dogs and throwing rocks. Next, he loses consciousness for several days. When he wakes up he cannot move. The elders of the village decide that he must have met the mother of illnesses, who made him sick because he threw rocks at her.
 
 ### SVOD4-163: Goat veneration
 Recorded with M. Magomedxanov (born in 1901) by M.R. Xalidova in Miarso, in 1974.
@@ -311,3 +319,4 @@ p2 <- ggplot(countstrat, aes(x = volume, y = count, fill = as.factor(form))) +
 p2 + labs(fill = "form")
 
 ```
+
