@@ -6,7 +6,6 @@ output:
    fig_cap: yes
 date: 'Version: `r Sys.Date()`'
 author: "[Samira Verhees](https://sverhees.github.io/site/index.html)"
-#bibliography: bibliography.bib
 ---
 
 ```{r setup, include=FALSE}
