@@ -1,0 +1,27 @@
+txtid	complete	title	language	genre	firstline	firstline_morph	firstline_gloss	firstline_formula	one	strategy	particle
+gudava1962-1	translation end missing (in flex)		Botlikh	magical fairytale	Вук1а идахо вук1ич1а идахо цев хан.	w-uk’-a ida=χo w-uk’-ič’a ida=χo ce-w χan.	m-be-cvb cop=rep m-be-neg.cvb cop=rep one-m king	There was, there was not.	yes	perfect	first few sentences
+gudava1962-3	yes		Botlikh	everyday fairytale	Рук1а идахо цев г1адалла цегъо ц1ц1удур к1еда вацци.	r-uk’-a ida=χo ce-w ˁadal=la ce=ʁo c’ːudur k’e-da wacːi.	an.pl-be-cvb cop=rep one-m idiot=add one=restr smart two-num brother	There was.	yes	perfect	first two sentences
+gudava1962-6A	yes		Miarso	animal fable	Цев адам ва2ъада рухьулълъа.	ce-w adam w-ãʔ-a=da ruxu-ɬːa.	one-m man m-go-cvb=cop forest-in.lat	no formula	yes	perfect	no
+gudava1962-6D	yes		Miarso	mollah nasreddin	Малла русен ва2ъада гьамахич1у гьеъа шогъалъи гизабалъида бук1о бичи.	Malla Rusen w-ãʔ-a=da hamaχi-č’u heʔa šoʁa-ɬi giza-baɬi=da b-uk’-o bič-i.	Mollah Nasreddin m-go-cvb=cop donkey-cont up ceramic-gen pot-pl=int n-be-caus.aor sell-inf	no formula	no	perfect	no
+gudava1962-7	yes		Botlikh	local legend	Ссеъа заманади цеб чамухвадала бешунуда решиди ссеъа ххинду ищиб гьани бук1а идохо рух1едида асар балалълъи, кьеули цеб к1ец1алида, гьабуц1алида ц1аракилълъи.			no formula	yes	perfect	first two sentences
+gudava1962-9	half of translation missing		Botlikh	magical fairytale	Цеб пуланаб гьанл1и вук1а идахо цев рахъухъиш, индаг1ала и2ъи2ла чучаду ишхъе вук1ихо.	ce-b pulana-b han-ƛi w-uk’-a ida=χo ce-w raquqiš, inda-ˁala ĩʔĩla čučadu išqe w-uk’-i=χo.		There was.	yes	perfect	first sentence
+gudava1962-10B	no		Botlikh	mollah nasreddin	Цер зиуди малла руцениди гьикьу ида илухи: гъада, ил1и ил1иб бекьуссуб габ гъайч1а бичеули, гъамди-ссуди нагъарла ибсеули гьуб гъайч1а бича биц1аб нагъарлълъихи.			One day.	yes	perfect	no
+gudava1962-11	no		Botlikh	magical fairytale	Цеб пуланаб дунеле вук1а идахо цеб мак1ил рул1ихич1о хан.	ce-b pulana-b dunel-e w-uk’-a ida=χo ce-b mak’i-l ruƛ-i-χ-i-č’o χan.	one-n far-n world-sup m-be=cvb cop=rep one-n child-pl become-neg.ptcp king	There was.	yes	perfect	first sentence
+azaev1974-2	yes		Botlikh	everyday fairytale	Цев г1олохъан гьек1ва вул1уда гьанила бета илала ета маг1ишати орсса.	ce-w ˁoloqan hek’ʷa w-uƛ-u=da hani=la b-et-a ila=la j-et-a maˁišati orsːa.	one-m young person m-walk-cvb=cop village=add n-leave-cvb mother=add f-leave-cvb riches outside	no formula	yes	perfect	no
+svod3-117	yes		Avar	everyday fairytale	ВукIун вуго эбелги хун хутIарав, инсуца цойгидай чIужуги ячун вугев цо бесдалав.			There was	yes	perfect	no
+svod4-64	yes		Avar	mythological prose	ГIуж вукIана НухI аварагасул вас, амма гьев Аллагьасе мутIигIлъулев вукIун гьечIо.			no formula	no	perfect	no
+svod4-136	yes		Avar	mythological prose	Шодрода росулъ цебе заманалда вукIан вуго Сурхай абулев гIияхъан.			One time.	yes	perfect	no
+svod4-163	yes		Avar	mythological prose	?			no formula	no	perfect	yes
+svod1-43	yes		Avar	animal fable	БукIанила букIинчIила, цо бацI букIанила.	b-uk’an=ila b-uk’inč’=ila co bac’ b-uk’an=ila	n-be=rep n-be.neg=rep one wolf n-be=rep	There was, there was not.	yes	particle	no
+svod2-74	yes		Avar	magical fairytale	ВукIанила вукIинчIила, цо Рахъухъирщ вукIанила.	w-uk’an=ila w-uk’inč’=ila co Raquqiršː w-uk’an=ila		There was, there was not.	yes	particle	yes
+gudava1962-10C	no		Botlikh	magical fairytale	Вук1а вук1идахо цеб ханив гьабуда ваша.	w-uk’-a w-uk’-ida=χo ce-b χani-w habu-da waša.	m-be-cvb m-be-prf=rep one-n king-m[gen] three-num son	There was.	yes	1 pqp(!), perfect + switch	first sentence
+azaev1974-1	yes		Botlikh	magical fairytale	Вук1о вук1идахо цев кутакав хан.	w-uk’-o w-uk’-ida=χo ce-w kutaka-w χan.	m-be-caus.cvb m-be-prf=rep one-m strong-m king	There was.	yes	1 pqp(!), perfect + switch	first three sentences
+gudava1962-2	yes, but wrong genre		Botlikh	personal story				NA			
+gudava1962-4	yes, but wrong genre		Botlikh	personal story				NA			
+gudava1962-5	yes, but wrong genre		Botlikh	proverbs				NA			
+gudava1962-6B	yes, but wrong genre		Miarso	dialogue				NA			
+gudava1962-6C	yes, but wrong genre		Miarso	dialogue				NA			
+gudava1962-8A	yes, but wrong genre		Botlikh	instruction				NA			
+gudava1962-8B	yes, but wrong genre		Botlikh	instruction				NA			
+gudava1962-8C	yes, but wrong genre		Botlikh	personal story				NA			
+gudava1962-10A	yes, but wrong genre		Botlikh	rhyme				NA			

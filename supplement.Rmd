@@ -1,0 +1,313 @@
+---
+title: "Supplement"
+output:
+  html_document: 
+   toc: yes
+   fig_cap: yes
+date: 'Version: `r Sys.Date()`'
+author: "[Samira Verhees](https://sverhees.github.io/site/index.html)"
+#bibliography: bibliography.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, include=FALSE, message=FALSE, warning=FALSE}
+
+# load packages
+
+library(tidyverse) # data manipulation
+library(wesanderson) # color palettes for plots
+library(lingtypology) # linguistic mapping
+library(knitr) # simple html tables
+library(DT) # more fancy html tables
+
+# load data
+
+## Botlikh text sample and narrative strategies
+bot <- read_tsv("botlikhstrategies.csv")
+
+## Avar narrative strategies
+av <- read_tsv("avarstrategies.csv")
+
+## Text sample folklore anthology with languages and locations
+all <- readxl::read_xlsx("svod_content.xlsx")
+
+## Coordinates of Botlikh villages and their neighbors with languages
+coord <- read_tsv("botlikhhood.csv")
+
+```
+
+# 0. Introduction
+
+This is a supplement to my paper "The role of multilingualism in Botlikh narratives" for *Sogolon*, a volume in memory of Alexandra Vydrina.
+
+This supplement contains:
+
+* An overview of the text sample with a short synopsis of each text
+* A list of the sampled texts, coded for several parameters related to narrative strategy
+* An overview of the contents of an anthology of Dagestanian folklore in terms of language and village representation
+* A list of Avar texts from the anthology, coded for several parameters related to narrative strategy
+* Code and data used to create the figures in the paper (see the [repository](https://github.com/sverhees/2023_Sogolon_paper_supplement))
+
+# 1. Text sample
+
+The overview of the text sample is ordered by source. Full bibliographical information for each source can be found in the paper.
+
+## GUDAVA1962
+
+### GUDAVA1962-1: The king's sons (pp. 161--171)
+
+Fairy tale about a king who had three sons and an apple-tree in his yard. On this tree grew apples the size of a head, and every night one of them would disappear. The king orders his oldest son to guard the tree at night, but he falls asleep before the thief arrives. The same thing happens the next night to the middle son. The youngest son, when it is his turn, cuts his finger and puts some salt in the wound so that the pain will prevent him from falling asleep. He sees a bird-shaped creature trying to steal an apple and shoots it. The creature is wounded but manages to fly away. The king then sends his sons to follow the trail of blood. 
+
+The trail leads them to a pit. The youngest son descends into the pit and finds a room with a beautiful girl, a dragon and a pitcher with an apple. He cuts of the dragon's head and takes the girl and the apple. In the next room he finds a stronger dragon, a more beautiful girl and more apples. Again he kills the dragon and takes the girl and the apples. In the third room he finds an even stronger dragon, an even more beautiful girl and more apples. He kills the dragon and takes the girl and the apples. After he sends the girls and apples back up from the pit, his brothers leave. The youngest son then discovers more people living underground and goes on a side-quest to help them get rid of a dragon that is blocking their access to water. He succeeds in killing another dragon and is rewarded with means to help him get back home, where he finds his brothers celebrating their weddings. He marries the third girl from the pit and they live happily ever after.
+
+### GUDAVA1962-3: The smart and the stupid brother (pp. 174-178)
+
+Fairy tale about two brothers, one who is smart and one who is stupid, who run a household together. The smart brother always goes out to hunt while the stupid brother stays home to prepare food.
+
+One day the stupid brother goes out for firewood. He finds a needle, puts it with the firewood and comes back home. The smart one gets angry and says that he should have pinned the needle on his shirt. The next day he goes out for firewood again. He finds a dagger and pins it to his shirt. When he comes home, the smart brother gets angry and says that he should have put the dagger in his belt. The third time he finds a puppy and put it in his belt. When he comes home, the smart brother gets angry and says that he should have used food to make the puppy follow him. The next day he finds a hammer and tries to make it follow him by offering it some food. He comes home and gets angry at the smart brother, saying that his advice was useless, because the hammer would not follow him. The smart brother sends him back into the forest to fetch the hammer and put it over his shoulder. The stupid brother did as he asked and hurt his shoulder. The next day he stays home and the smart brother goes out to get firewood and finds a beehive. He returns home to grab some jugs to fill up with honey and goes back to fetch the honey at night. The stupid brother goes out to bring him some food, but he is followed by his shadow, which he thinks is another person. Because his brother warned him not to lead anyone else to the honey, he tries to get rid of his shadow by offering it food. He arrives at the beehive crying that he gave all his food to this person that would not stop following him. The smart brother gets angry at him and sends him back to fetch the food. They eat and then fill up the jugs with honey.
+
+The next day the smart brother goes out to hunt. A bear comes by the house and tricks the stupid brother into letting him eat the honey. After he eats all the honey, he defecates in the jugs. The smart brother finds out about this and gets angry again. He decides to stay home the next day and hide behind the door with a hammer to kill the bear when it returns. He kills the bear. The next day, he goes out to hunt again while the stupid brother prepares the bear meat. He accidentally sets fire to their house and it burns down. They leave the village, and end up spending the night in a tree.
+
+The next morning, a market is set up under the tree. When the boards on which they were sleeping fall down from the tree, the merchants run away and the brothers take all of their things: the smart brother takes the money, and the stupid one takes their *burki*. The next night they sleep in the mountains. It is very cold there, so the smart brother asks the stupid one for a few coats to keep him warm, but the stupid brother refuses. The next day, the smart brother has frozen to death. The stupid brother cannot get him to wake up, and does not understand that he is dead. He goes to a nearby village for help. The villagers bury the dead brother, and the stupid brother takes his money, builds a house in the village and setlles down there.
+
+### GUDAVA1962-6A: The man and the snake (p. 179)
+Fable about a man who saves a snake from a fire. After the man saves the snake, the snake wants to bite him. The man thinks this is wrong, but the snake does not. They agree to ask the first three creatures they run into, to judge whether the snake should bite him or not.
+
+First they meet a donkey. The donkey says that people made him work well into old age and then kicked him out, so he thinks that the snake should bite him. Then they meet a bull, who says the same. Next, they meet a fox. The fox says that he does not believe that the man saved the snake from fire, and asks them to demonstrate how it went. They throw the snake back into the fire and leave it there to burn, after which the fox says to the man that he should not save snakes, because they will never say thank you.
+
+### GUDAVA1962-6D: Anecdote about Mollah Nasreddin (p. 181)
+
+An anecdote about Mollah Nasreddin who goes out with his donkey to sell pottery. He travels over a very bad road and promises to give alms if he makes it to the end without his donkey falling. He makes it to his destination but does not give alms, so the donkey ends up falling anyway and all of his pottery breaks. He then grinds the shards into powder and tries to sell it as mouse poison. A woman asks how it works, and Mollah Nasreddin explains that she should catch a mouse and put the powder in its eyes. She replies: "if I can catch a mouse, can't I beat it to death?" to which Mollah Nasreddin says that she can do either of those things.
+
+### GUDAVA1962-7 Our village (pp. 181-183)
+Local legend about how some hundred years ago the Andic villages were constantly trying to conquer each other and take each other's land. Botlikh was small and did not have a lot of weapons, and they had to fend off attackers coming from higher up in the mountains. A person from Tasuta who lived in Botlikh and held guard at Xandu told them about everything that happened on the side of Andi. 
+
+There were rumors that a coalition of Andi and Karata would try to take Botlikh, attacking from two sides, so the people of Botlikh came up with a way to trick the attackers. They left their war materials in plain sight near the *godekan*. The guard from Tasuta intercepted a messenger with a letter from Andi to Karata, saying they will attack Botlikh the next day. He took the messenger to Botlikh and showed him the godekan full of war materials and other goods. The people of Botlikh then went to a different place using another road (perhaps through a tunnel), so that by the time the Andi spy reached the same place, they were already there playing music and having fun. The spy went back to Andi thinking that there were many people in Botlikh, and that they had a lot of power.
+
+The next day, Andi attacked Botlikh. The people of Botlikh fought with bows and arrows, rocks and sabres. The Andi thought that the people of Karata would help them, but they never came, because the letter did not reach them. The Andi people were defeated and fled into the mosque of Chanko, leaving behind their gear, shoes, and weapons.
+
+### GUDAVA1962-9: What happened with Aznaj-Bahadur (pp. 185-188)
+Fairy tale about a boy named Raquqiš, who never did anything but churn butter. One day, a lot of flies gather around the butter. He hit at them and killed 60 flies at once. He ran off to his peers to brag. They gifted him a *burka*, a sabre, and a saddled horse. On the sabre they made an inscription: "This Aznaj-Bahadur can kill sixty men with one blow." Then they put him on a horse and sent him away. Raquqiš goes far away, leaving one mountain behind and then the next, until he reaches a meadow where he falls asleep. Three Narts find him and take him home with them. They are slightly afraid of him because they read the inscription on his sabre. Raquqiš marries their sister, who happens to be very beautiful, and becomes their brother. One day, the Narts receive a letter from the king asking them for help fighting another king. Raquqiš as their brother also has to go.
+
+*Further translation missing*
+
+### GUDAVA1962-10B: Anecdote about Mollah Nasreddin
+*No translation*
+
+### GUDAVA1962-10C: Fairy tale about the three sons of a king
+Variation on the same theme as GUDAVA1962-1.
+In this version, golden-haired foals are stolen by ifrits.
+
+### GUDAVA1962-11: Story of a king who had no children
+*No translation*
+
+## AZAEV1974
+
+### AZAEV1974-1: Fairy tale of a king and his three sons (Appendix 1-18)
+
+A variation on the same theme as GUDAVA1962-1 and GUDAVA1962-10C. In this version, golden-haired foals are stolen by a mysterious dark cloud. The three sons of the king set out to find the stolen foals, which leads them to three Narts that must be defeated: the first one has three heads and holds a girl captive in a silver palace, the second one has six heads and holds a girl captive in a golden palace, the third one has nine heads and holds a girl captive in a pearl palace. The youngest son defeats all three Narts, frees the girls and takes back the horses, with the help of magic objects he obtained from an old lady who also happens to be the mother of the captive girls.
+
+The youngest son takes the girls back to their mother and together with the horses goes out to find his brothers. The brothers are jealous of him, so at night, they take his saber, cut off his legs and leave with the horses. When the youngest son wakes up, he understands what happened. With the help of the old lady and her daughters he heals his legs and builds himself a hut. He is joined by two other men: one who calls himself "bald" and one who calls himself "cross-eyed". They are joined by a beautiful girl who ran away from her evil stepmother. They all run a household together.
+
+One day when the men are away hunting, the girl accidentally puts out the fire. She does not know how to make a new one, so she goes out to look for fire. She arrives at a house with smoke coming from the chimney. Inside she finds an old witch who agrees to give her fire if the girl lets her drink her blood. Every day when the men go out to hunt, the witch returns to drink her blood, as the girl grows paler and weaker. The men decide to stay behind one day, hiding behind the house, to find out what is going on with the girl. They catch the witch and command her to make the girl healthy again, to give the bald man back his hair and the youngest son his legs, and to heal the cross-eyed man's eyes. 
+
+The witch says that she has to swallow them and throw them back up to grant their wishes. The legless son's wish is granted last. He does not trust the witch and asks his new brothers to stick the magic saber in the witch's stomach if she does not throw him back up. Indeed the witch did not intend to let him out, because she recognized him as the man who killed her brothers (the three Narts from earlier in the story). The son's new brothers cut her stomach but do not find him. They cut the witch to pieces and find him in one of her nails. When they get him out, he is stronger and more beautiful than ever.
+
+The men part ways, each going back home. The youngest son takes the girl with him. When he arrives home, his real brothers are having a wedding. They had lied to their father that the youngest son died in battle with a Nart, and claimed all his accomplishments. The youngest son then produces the Narts' heads and their palaces, which he had stored in one of the magic objects, to prove that they were lying. The father wants to punish his oldest sons, but the youngest asks him to forgive them. They all get married and move into the Nart palaces.
+
+### AZAEV1974-2: Family happiness (Appendix 19-30)
+Fairy tale about a young man who left his village to earn money and find happiness. When he stops to drink from a river, he notices an apple floating in the water. He takes a bite from the apple and then remembers his mother's words, that he should never take something from someone else without asking. He follows the current of the river in search of the apple's owner. 
+
+At the first house he reaches, he sees an old, gray man and asks him if the apple is his. The man says that it might belong to his older brother who lives further down the stream. The old man commands his wife to feed the guest, but she refuses. The young man walks on and arrives at another house. There he meets another old man, who looked younger than the first but was indeed older. The old man says that the apple probably belongs to his oldest brother. He asks his wife to make some food for the guest. She says she will do it, but does not show herself again. The young man decides to thank the old man and goes on his way despite his hunger. He reaches the third house late in the evening and is greeted by a cheerful man who did not have a grey hair on his head. The man's wife greets him just as cheerfully. She lets him wash himself and puts food on the table even before they asked him who he was and why he came. The young man ends up staying at the house for three days.
+
+On the fourth day, the man of the house asks him why he came. The young man shows him the apple and asks if it is his. The man confirms that it is indeed his apple and asks for the young man's name. The young man asks if he can forgive him, to which the man answers that he will forgive him if the young man will marry his daughter, who does not have arms nor legs and is blind, deaf and mute. The young man agrees on the condition that he can discuss it with his mother first. After obtaining his mother's approval, he comes back to the old man's house.
+
+The man says it is time to meet the bride and ask for her approval, and warns him that he will not forgive him for the apple if she refuses. The girl turns out to be incredibly beautiful, and they fall in love with each other instantly. The next day they get married. After a few days the young man asks the old man why he looks so much younger than his brothers. The old man says that his secret is family happiness. His youngest brother had married a terrible woman who had no love or respect for him. After a while he started to treat her the same way, they were constantly arguing. His middle brother was also unlucky, although his wife was a bit less terrible. Only the oldest brother and his wife loved and respected each other, and helped and supported one another. The only worry the old man had was to protect his daughter from a bad marriage. The young man had made a good impression, because he asked for forgiveness for eating the apple. The man liked him even more when he did not refuse to marry his daughter despite her supposedly having no legs or arms and not being able to see, hear or speak. He finally decided that he was a good candidate when he asked to discuss the matter with his mother, because a man who respects his mother will respect his wife, the mother of his children.
+
+## SVOD1 -- Animal fables
+### SVOD1-43: Song about the old wolf
+Recorded from X. Magomedov by M.R. Xalidova, in Botlikh, in 1968.
+
+Fable about an old wolf who goes out to hunt and runs into a bull. The wolf tells the bull that he will eat him. The bull agrees to be eaten, but asks the wolf to kiss him on the forehead first, like the ancestors did. When the wolf kisses the bull on the forehead, the bull throws him off with his horns, and the wolf flies over seven mountains before he comes down.
+
+When he lands, he sees a foal. The foal asks him to replace one of his shoes, because he will go to hell if he dies with naked hooves. When the wolf replaces the shoe, the foal kicks him away over three mountains. He lands in a field near Inkhelo, where he sees an old donkey. The donkey persuades the wolf to go to the village with him, because he will find a young donkey there to eat. As they approach the village singing, the villagers come out with pitchforks to chase away the wolf.
+
+Having run for cover to the forest, the wolf sings that he is a not a mother-in-law, to be kissing bulls, and not a blacksmith, to put horseshoes on a foal, and not a singer, to be singing songs with a donkey.
+
+## SVOD2 -- Magical fairy tales
+### SVOD2-74: Rakukiršː
+Recorded from M. Axmedov by M.R. Xalidova, in Botlikh, in 1974.
+
+Fairy tale about Rakukiršː, who was spoiled as a child. One day his mother was tired of taking care of him and sent him out into the world. He asks his mother to pack him a bag of cinders, an awl, and a chunk of cottage cheese for the road. He goes far away and at some point runs into a Nart. He tricks the Nart into thinking he is very strong, and the Nart invites him to his palace.
+
+At the palace he continues to trick the Nart and his brothers. He convinces them that he is incredibly strong and wants to kill them. They become terrified of him and flee the palace. Then Rakukiršː sends for his mother and a bride, and they live happily ever after at the palace.
+
+## SVOD3 -- Everyday fairy tales
+### SVOD3-117:The orphan
+Recorded from M. Magomedov by M.R. Xalidova in Botlikh, in 1974.
+
+Fairy tale about a child who remains unnamed and lives with his father and stepmother. They make him guard the chickens, dry the wheat in the sun, and churn butter. One day an eagle steals the chickens and the orphan breaks the butter churn, after which his stepmother beats him up and sends him away.
+
+The next day a *kunak* from Muni visits them with a donkey packed with fruit. He asks where the child is, and shames the father and stepmother for sending the child away. They take the child back in and make him look after the kunak's donkey and a sick bull of their own. When the bull becomes sicker, the child decides to cut its throat. He accidentally cuts the throat of the donkey and flees the house fearing that he will be killed. He flees to Muni where he is welcomed by a female kunak, who feeds him whey and corn khinkal and puts him to sleep outside in the yard. Outside the child finds eggs and puts them in his hat. Then he goes back into the house after the lady of the house has left to meet with her lover. He finds a jar of *urbech* and sticks his hand in it. Then the lady of the house returns with her lover. They find out what the child has been up to when he is forced to shake hands with the woman's lover and his hand turns out to be covered in urbech. The lady of the house hits the child on the head, breaking the eggs under his hat. The lady and her lover fear that she broke his skull and they flee the scene. The child then fills a bag with nuts and flees to the nearby village Zilo.
+
+Outside Zilo he goes to sleep in a haystack. The next day the owner of the haystack comes by. When he sees a pair of feet sticking out of the haystack, he thinks the orphan is dead. He goes back to Zilo to get help. In the meantime, the orphan wakes up and makes his way to Zilo. When he arrives, the owner of the haystack is so happy that he is still alive, that he gives him a lot of *sadaqah*. The orphan returns home with this sadaqah, to which his stepmother responds that his return is for the better
+
+According to the editors of the volume, this story is similar to a Dargwa fairy tale, including some shared motives like the breaking of the eggs under his hat (see page 848).
+
+## SVOD4 -- Mythological prose
+### SVOD4-64: The downfall of ˁUž
+Recorded from D. Magomedov by M.R. Xalidova in Miarso, in 1974.
+
+Story about ˁUž, a son of the prophet Nuh who refused to bow down to Allah. Allah sent a deluge to punish him. ˁUž mounted a stallion to save himself. The water kept rising, so ˁUž climbed on top of a mountain, but the water rose even further. Even when the water was up to his throat, he refused to bow down, so he went under.
+
+### SVOD4-136: About a meeting with the Mother of illnesses
+Recorded with D. Tagirov by M.R. Xalidova in Miarso, year unknown.
+
+The sheperd Surxaj from Šodroda (a nearby Avar village) goes to fetch water late in the evening after he has driven the cattle into the stable. He encounters a huge being dressed in rags and tries to chase it away by sending ferocious dogs and throwing rocks. Next, he loses consciousness for several days. When he wakes up he cannot move. The elders of the village decide that he must have met the mother of illnesses, who made him sick because he threw rocks at her.
+
+### SVOD4-163: Goat veneration
+Recorded with M. Magomedxanov (born in 1901) by M.R. Xalidova in Miarso, in 1974.
+
+Short fragment about how the people of Miarso worshiped a white goat before the spread of Islam.
+
+# 2. Narrative strategy in the Botlikh sample
+
+## Frequency of strategies per genre
+```{r, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+
+# count the occurrence of strategies in the Botlikh sample
+
+countstratbot <- bot %>%
+  filter(language %in% c("Botlikh", "Miarso")) %>%
+  filter(!is.na(strategy)) %>%
+  mutate(strategy = case_when(strategy == 'perfect' ~ 'perfect',TRUE ~ 'other')) %>%
+  mutate(particle = case_when(particle == 'no' ~ 'no',TRUE ~ 'yes')) %>%
+  select(genre, strategy, particle) %>%
+  group_by(genre, strategy, particle) %>%
+  summarise(count = n())
+
+countstratbot <- rbind(countstratbot, data.frame(particle='total', t(colSums(countstratbot[,4]))))
+
+knitr::kable(countstratbot)
+
+```
+
+## List of Botlikh texts coded for narrative strategy
+
+```{r, echo=FALSE, message=FALSE}
+
+bot$idiom <- bot$language
+
+datatable(bot[,c(1, 13, 5:12)])
+
+```
+
+# 3.  Language representation in the Dagestanian folklore anthology
+
+## Number of texts included in the folklore anthology per language and volume
+
+```{r, echo=FALSE, message=FALSE, fig.height=4}
+
+text_count <- all %>%
+  select(lang, volume, title) %>%
+  group_by(lang, volume) %>%
+  summarise(count = n())
+
+p <- ggplot(text_count, aes(x = reorder(lang, -count), y = count, fill = as.factor(volume))) + 
+  geom_bar(stat = "identity")+
+  scale_fill_manual(values = wes_palette("Moonrise3"))+
+  theme_classic()+
+  theme(axis.title = element_blank())+
+  coord_flip()
+
+p + labs(fill = "volume")
+
+```
+
+## L1 of locations where Avar texts from the anthology where recorded
+
+For a number of texts, the folklore anthology provides information on where the recording took place. Some of the locations where Avar texts were recorded have a different L1.
+
+```{r, echo=FALSE, message=FALSE, fig.height=4}
+
+vill_count <- all %>%
+  select(lang, place_lang) %>%
+  filter(lang == "Avar") %>%
+  group_by(lang, place_lang) %>%
+  summarise(count = n()) %>%
+  arrange(desc(count))
+
+knitr::kable(vill_count)
+
+```
+
+# 4. Narrative strategy of Avar texts in the folklore anthology
+
+## Frequency of strategies per volume
+```{r, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+
+# count the occurrence of strategies in the Avar sample
+
+countstrat <- av %>%
+  select(volume, form) %>%
+  group_by(volume, form) %>%
+  summarise(count = n())
+
+
+countstrat <- rbind(countstrat, data.frame(form='total', t(colSums(countstrat[,3]))))
+
+knitr::kable(countstrat)
+
+```
+
+## List of Avar texts coded for narrative strategy
+
+The text id in the table is the number of the text in the corresponding volume.
+
+```{r, echo=FALSE, message=FALSE}
+
+datatable(av[,1:4])
+
+```
+
+# 5. Figures
+
+The map below was created using the [East Caucasian villages dataset](https://sverhees.github.io/master_villages/maps_new.html). 
+
+## Figure 1. Botlikh and its linguistic neighborhood
+
+```{r, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+
+map.feature(coord$lang,
+            latitude = coord$lat,
+            longitude = coord$lon,
+            features = coord$lang,
+            label = coord$label,
+            label.hide = FALSE,
+            color = "magma",
+            width = 8,
+            tile = c("Esri.WorldGrayCanvas"))
+
+```
+
+Figure 2 plots the number of Avar texts in which a certain narrative strategy was used per volume of the folklore anthology. Since each volume is dedicated to a particular genre, the frequencies can represent the genre: 4 -- mythological prose, 3 -- everyday fairy tales, 2 -- magical fairy tales, 1 -- animal fables.
+
+## Figure 2. Avar narrative strategies by genre
+
+```{r, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+
+# plot the occurrence of strategies per volume / genre
+
+p2 <- ggplot(countstrat, aes(x = volume, y = count, fill = as.factor(form))) + 
+  geom_bar(stat = "identity")+
+  scale_fill_manual(values = wes_palette("Chevalier1"))+
+  theme_classic()+
+  theme(axis.title = element_blank())+
+  coord_flip()
+
+p2 + labs(fill = "form")
+
+```
