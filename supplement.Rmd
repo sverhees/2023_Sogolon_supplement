@@ -93,14 +93,14 @@ Fairy tale about a boy named Raquqiš, who never did anything but churn butter. 
 
 *Further translation missing*
 
-### GUDAVA1962-10B: Anecdote about Mollah Nasreddin
+### GUDAVA1962-10B: Anecdote about Mollah Nasreddin (pp. 189-201)
 *No translation*
 
-### GUDAVA1962-10C: Fairy tale about the three sons of a king
+### GUDAVA1962-10C: Fairy tale about the three sons of a king (pp. 189-201)
 Variation on the same theme as GUDAVA1962-1.
 In this version, golden-haired foals are stolen by ifrits.
 
-### GUDAVA1962-11: Story of a king who had no children
+### GUDAVA1962-11: Story of a king who had no children (pp. 201-209)
 *No translation*
 
 ## AZAEV1974
@@ -294,6 +294,7 @@ map.feature(coord$lang,
             features = coord$lang,
             label = coord$label,
             label.hide = FALSE,
+            popup = coord$name,
             color = "magma",
             width = 8,
             tile = c("Esri.WorldGrayCanvas"))
